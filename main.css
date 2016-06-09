@@ -1,0 +1,197 @@
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+#part2, #part3, #part4 {
+  display: none;
+}
+
+#bluetext {
+  color: blue;
+}
+
+#redtext {
+  color: red;
+}
+
+body {
+    font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #E9EAEE;
+}
+
+header {
+  padding-top: 3em;
+  text-align: center;
+}
+
+h1, h2 {
+    font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2 { 
+    color: #BC6026;
+    padding-top: 1em;
+    font-size: 100%;
+    padding-left: 20em;
+    padding-right: 20em;
+    
+}
+
+#knndecisionboundary {
+  margin-left: 15%;
+  height: 500px;
+  width: 400px;
+}
+
+h3, h4 {
+  text-align: center;
+}
+
+div.row {
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+
+div.toolbar {
+  padding-left: 30em;
+  padding-top: 2em;
+  width: inherit;
+}
+
+div.toolbar button {
+  margin: 0 auto;
+}
+
+div#infoSection.col-md-6 {
+  padding-top: 3em;
+  width: 40%;
+  font-size: 120%;
+}
+
+
+div#infoSection2.col-md-6 {
+  padding-top: 3em;
+  width: 40%;
+  font-size: 120%;
+}
+
+div#scrollDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 47%;
+  text-align: center;
+  padding-bottom: 9em;
+}
+
+a.scrollto {
+    cursor: pointer;
+    display: block;
+    left: 45%;
+    bottom: 10px;
+    margin-left: -50px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #484745;
+    text-align: center;
+    font-family: 'museo-sans-n9', 'museo-sans', sans-serif;
+    text-decoration: none;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+a.scrollto:after {
+    content: '';
+    position: relative;
+    display: block;
+    margin: 10px auto 0;
+    width: 34px;
+    height: 18px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAASCAYAAAA+PQxvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMlJREFUeNrE1GENgzAQBeBCagALWEADYQawwCRMwyRsVrDALGABC9wlt4R0Lde7C91LXtMSmn5/2uo29A7ygD5d+TTQEfquYegI8voDYoZOOPcwfKA9fcTcCyIcnb15WpTE/CBw4g8/lMBEESHkakwSEYNchTlFYOrExi9mpNvUGBAthziDhJhZicGnYeEQHOSIaRWYjvasHCIHosWIELkQKUaMkEByMSqEFMJh1AgNJIUxIbSQGMaEsEBCjAmReuI1mNWCwOwCDADFBkv3jxPImAAAAABJRU5ErkJggg==");
+}
+
+
+#footer {
+   bottom: 0;
+   width: 100%;
+   height: 100px;   
+   background: #BC6026;
+   margin:auto;
+   display: block;
+   text-align: center;
+   padding-bottom: 2em;
+   margin-top: 7em;
+}
+
+div#footer {
+  color: white;
+  font-size: 13pt;
+}
+
+
+#voronoiCircleSizeSlider, #voronoiNumPointsSlider {
+  width: 150px;
+}
+
+#knnCircleSizeSlider, #knnNumPointsSlider, #knnKSlider {
+  width: 150px;
+}
+
+#decisionKSlider {
+  width: 80%;
+}
+
+.toolbar > span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.toolbar {
+  display: flex;
+}
+
+.point {
+    fill: #999;
+    stroke: #fff;
+}
+
+.point.scanned {
+  fill: orange;
+  fill-opacity: 1;
+  stroke: brown;
+}
+
+.point.selected {
+  fill: red;
+  fill-opacity: 1;
+}
+
+.node {
+  fill: none;
+  stroke: #ccc;
+  shape-rendering: crispEdges;
+}
+  
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+path {
+  stroke: #fff;
+}
+
+path:first-child {
+  fill: yellow !important;
+}
+
+circle {
+  fill: #000;
+  pointer-events: none;
+}
